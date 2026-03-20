@@ -113,5 +113,4 @@ const EventOverview = () => {
 };
 
 export default EventOverview;
-ntOverview;
 
