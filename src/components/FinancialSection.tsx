@@ -43,11 +43,11 @@ const FinancialSection = () => {
 
                         {/* Right column - Financial image */}
                         <div className="md:w-[70%] flex justify-center items-center">
-                            <div className="max-w-md overflow-hidden rounded-3xl border border-border shadow-sm">
+                            <div className="max-w-[280px] overflow-hidden rounded-2xl border border-border shadow-sm">
                                 <img
                                     src="/ticket-puebla.jpg"
                                     alt="Ticket de pago Thinkhub Coworking - $3,060.00 MXN"
-                                    className="w-full h-auto object-cover rounded-3xl"
+                                    className="w-full h-auto object-cover rounded-2xl"
                                 />
                             </div>
                         </div>
