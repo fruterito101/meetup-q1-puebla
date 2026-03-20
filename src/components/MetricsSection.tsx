@@ -10,8 +10,8 @@ const XIcon = ({ className }: { className?: string }) => (
 
 const MetricsSection = () => {
   const registrationData = [
-    { name: "Luma Registrations", value: 41, fill: "hsl(215, 65%, 35%)" },
-    { name: "IRL Attendees", value: 18, fill: "hsl(355, 77%, 50%)" },
+    { name: "Luma Registrations", value: 21, fill: "hsl(215, 65%, 35%)" },
+    { name: "IRL Attendees", value: 15, fill: "hsl(355, 77%, 50%)" },
   ];
 
   const poapData = [
