@@ -56,9 +56,9 @@ const MetricsSection = () => {
             </div>
             <div className="flex items-center justify-center">
               <div className="stat-card">
-                <div className="stat-number text-brand-red">44%</div>
+                <div className="stat-number text-brand-red">71%</div>
                 <div className="stat-label text-lg">Conversion Rate</div>
-                <p className="text-lg text-muted-foreground mt-2">18 out of 41 registered attended</p>
+                <p className="text-lg text-muted-foreground mt-2">15 out of 21 registered attended</p>
               </div>
             </div>
           </div>
@@ -225,22 +225,14 @@ const MetricsSection = () => {
         {/* Social Media Stats */}
         <div className="mt-12">
           <h3 className="text-xl font-bold text-brand-dark-blue mb-6">Social Media Engagement</h3>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+          <div className="grid grid-cols-2 gap-4 max-w-md mx-auto">
             <div className="stat-card">
-              <div className="stat-number text-brand-red">17</div>
+              <div className="stat-number text-brand-red">11</div>
               <div className="stat-label text-lg">Total Posts</div>
             </div>
             <div className="stat-card">
-              <div className="stat-number text-brand-dark-blue">344</div>
+              <div className="stat-number text-brand-dark-blue">700+</div>
               <div className="stat-label text-lg">X Views</div>
-            </div>
-            <div className="stat-card">
-              <div className="stat-number text-brand-light-blue">125</div>
-              <div className="stat-label text-lg">YouTube Views</div>
-            </div>
-            <div className="stat-card">
-              <div className="stat-number text-brand-yellow">469</div>
-              <div className="stat-label text-lg">Digital Reach</div>
             </div>
           </div>
         </div>

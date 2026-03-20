@@ -59,7 +59,7 @@ const EventOverview = () => {
                 </div>
                 <div>
                   <p className="text-sm text-muted-foreground">Location</p>
-                  <p className="font-semibold">Casa Frutero, CDMX</p>
+                  <p className="font-semibold">Thinkhub Coworking</p>
                 </div>
               </div>
               <div className="flex items-center gap-4">
