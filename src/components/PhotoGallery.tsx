@@ -9,6 +9,19 @@ const PhotoGallery = () => {
         { src: "https://res.cloudinary.com/dwqqk1pzk/image/upload/v1773986918/photo_5019545046847523771_y_bjspam.jpg", alt: "Puebla Event Photo 5" },
     ];
 
+    const lumaImages = [
+        { src: "https://res.cloudinary.com/dwqqk1pzk/image/upload/v1773988248/Luma-1_yihnik.png", alt: "Luma Event 1" },
+        { src: "https://res.cloudinary.com/dwqqk1pzk/image/upload/v1773988249/Luma-2_naftsk.jpg", alt: "Luma Event 2" },
+    ];
+
+    const screenshotImages = [
+        { src: "https://res.cloudinary.com/dwqqk1pzk/image/upload/v1773986904/Captura_de_pantalla_2026-03-19_223744_kdfrgq.png", alt: "Screenshot 1" },
+        { src: "https://res.cloudinary.com/dwqqk1pzk/image/upload/v1773986904/Captura_de_pantalla_2026-03-19_223431_gjunxe.png", alt: "Screenshot 2" },
+        { src: "https://res.cloudinary.com/dwqqk1pzk/image/upload/v1773986903/Captura_de_pantalla_2026-03-19_223033_jbfca1.png", alt: "Screenshot 3" },
+        { src: "https://res.cloudinary.com/dwqqk1pzk/image/upload/v1773986902/Captura_de_pantalla_2026-03-19_223310_cqqgyv.png", alt: "Screenshot 4" },
+        { src: "https://res.cloudinary.com/dwqqk1pzk/image/upload/v1773986903/Captura_de_pantalla_2026-03-19_223635_xjmvhd.png", alt: "Screenshot 5" },
+    ];
+
     return (
         <section id="photo-gallery" className="section-container pt-8 md:pt-12">
             <div className="max-w-6xl mx-auto">
@@ -17,9 +30,39 @@ const PhotoGallery = () => {
                     <span className="text-brand-dark-blue">Gallery</span>
                 </h2>
 
-                {/* Grid uniforme */}
-                <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+                {/* Photos Grid */}
+                <div className="grid grid-cols-2 md:grid-cols-3 gap-4 mb-6">
                     {images.map((img, index) => (
+                        <div key={index} className="card-frutal p-2 overflow-hidden group">
+                            <div className="aspect-[4/3] overflow-hidden rounded-lg">
+                                <img
+                                    src={img.src}
+                                    alt={img.alt}
+                                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                                />
+                            </div>
+                        </div>
+                    ))}
+                </div>
+
+                {/* Luma Images - 2 columns */}
+                <div className="grid grid-cols-2 gap-4 mb-6">
+                    {lumaImages.map((img, index) => (
+                        <div key={index} className="card-frutal p-2 overflow-hidden group">
+                            <div className="aspect-[4/3] overflow-hidden rounded-lg">
+                                <img
+                                    src={img.src}
+                                    alt={img.alt}
+                                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                                />
+                            </div>
+                        </div>
+                    ))}
+                </div>
+
+                {/* Screenshots Grid */}
+                <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+                    {screenshotImages.map((img, index) => (
                         <div key={index} className="card-frutal p-2 overflow-hidden group">
                             <div className="aspect-[4/3] overflow-hidden rounded-lg">
                                 <img
