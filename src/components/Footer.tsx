@@ -12,7 +12,7 @@ const Footer = () => {
         <div className="text-center mb-12">
           <h3 className="text-xl font-bold mb-4">Event Report</h3>
           <div className="space-y-1 text-white/80">
-            <p>Submission Date: 02/03/2026</p>
+            <p>Submission Date: 20/03/2026</p>
             <p>Prepared by: Frutero Team - CDMX Regional Coordinators</p>
             <p>Program: Meetups Frutales - ETHCDM</p>
             <p>Grant: Localism Fund Round 02</p>
