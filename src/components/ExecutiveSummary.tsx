@@ -9,7 +9,7 @@ const ExecutiveSummary = () => {
         </p>
 
         <img
-          src="https://res.cloudinary.com/dwqqk1pzk/image/upload/v1773986932/photo_5037759333134961699_y_sofzdd.jpg"
+          src="https://res.cloudinary.com/dwqqk1pzk/image/upload/v1773988211/photo_5037759333134961699_y_fhwm4o.jpg"
           alt="Foto final del evento Meetups Frutales Q1 2026"
           className="w-full rounded-2xl shadow-xl animate-fade-in"
         />
