@@ -25,7 +25,7 @@ const ImpactSection = () => {
     {
       goal: "Execute according to calendar",
       target: "✓",
-      achievement: "January 28, 2026",
+      achievement: "February 13, 2026",
       status: "complete",
     },
     {

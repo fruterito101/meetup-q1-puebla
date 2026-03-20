@@ -2,11 +2,10 @@ import { Wallet, CheckCircle2 } from "lucide-react";
 
 const FinancialSection = () => {
     const budgetItems = [
-        { name: "Venue", description: "Casa Frutero" },
-        { name: "Refreshments", description: "Pizza and beverages for ~20 people" },
-        { name: "Materials", description: "Digital materials, POAP design" },
-        { name: "Documentation", description: "Photo/video coverage" },
-        { name: "Streaming", description: "Equipment and platform usage" },
+        { name: "Venue", description: "Thinkhub Coworking" },
+        { name: "Refreshments", description: "Snacks and beverages for ~20 people" },
+        { name: "Materials", description: "Digital materials" },
+        { name: "Documentation", description: "Photo coverage" },
     ];
 
     return (
@@ -42,19 +41,12 @@ const FinancialSection = () => {
                             ))}
                         </div>
 
-                        {/* Right column - Financial images side by side */}
-                        <div className="md:w-[70%] flex flex-col sm:flex-row gap-4 items-center">
-                            <div className="flex-1 overflow-hidden rounded-3xl border border-border shadow-sm">
+                        {/* Right column - Financial image */}
+                        <div className="md:w-[70%] flex justify-center items-center">
+                            <div className="max-w-md overflow-hidden rounded-3xl border border-border shadow-sm">
                                 <img
-                                    src="https://res.cloudinary.com/dpzywidxy/image/upload/v1772063810/Financial-1_m2dhpk.jpg"
-                                    alt="Financial transparency document 1"
-                                    className="w-full h-auto object-cover rounded-3xl"
-                                />
-                            </div>
-                            <div className="flex-1 overflow-hidden rounded-3xl border border-border shadow-sm">
-                                <img
-                                    src="https://res.cloudinary.com/dpzywidxy/image/upload/v1772063810/Financial-2_s9pehb.jpg"
-                                    alt="Financial transparency document 2"
+                                    src="/ticket-puebla.jpg"
+                                    alt="Ticket de pago Thinkhub Coworking - $3,060.00 MXN"
                                     className="w-full h-auto object-cover rounded-3xl"
                                 />
                             </div>
