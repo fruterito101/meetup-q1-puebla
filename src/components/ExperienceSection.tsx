@@ -3,29 +3,24 @@ import { DoorOpen, GraduationCap, Coins, Bot, Pizza, Globe, Wrench, BookOpen, Aw
 const ExperienceSection = () => {
   const timeline = [
     {
-      title: "Pre-Event",
-      icon: <DoorOpen className="w-5 h-5" />,
-      content: "Attendees began to arrive with enthusiasm, quickly integrating into the welcoming atmosphere of Casa Frutero. Registration flowed smoothly as participants met and shared expectations about the event.",
-    },
-    {
-      title: "Track 1 - Onboarding & Fundamentals",
+      title: "Track 1: Onboarding & Fundamentals",
       icon: <GraduationCap className="w-5 h-5" />,
-      content: "A comprehensive introduction to the Ethereum ecosystem, covering blockchain basics, fundamental concepts (addresses, seed phrases), security best practices, and network types, establishing a solid foundation for ecosystem newcomers.",
+      content: "Ethereum Onboarding: Core concepts and initial network setup",
     },
     {
-      title: "Track 2 - Introduction to DeFi",
+      title: "Track 2: Introduction to DeFi",
       icon: <Coins className="w-5 h-5" />,
-      content: "Exploration of DeFi ecosystem, terminology, security recommendations, and protocols like AAVE, successfully demystifying decentralized finance and emphasizing advantages over traditional finance.",
+      content: "Liquidity mechanics and emerging financial tools",
     },
     {
-      title: "Track 3 - AI as Learning Assistant",
+      title: "Track 3: AI as Learning Assistant",
       icon: <Bot className="w-5 h-5" />,
-      content: "Demonstration of AI tools for building, security recommendations, and verification best practices, including a live bot demo for automated token transactions. Technical issues during the demo provided authentic learning about real-world development challenges; organizers invited participants to reconvene for collaborative troubleshooting.",
+      content: "Tools for on-chain analysis and coding optimization",
     },
     {
-      title: "Networking Session",
+      title: "Networking: Community Building",
       icon: <Pizza className="w-5 h-5" />,
-      content: "Organic networking session where participants discussed projects, formed connections, and explored collaboration opportunities, over pizza and refreshments. With engaging conversations about how AI and Vibe Coding enable non-technical individuals to create projects while helping experienced builders reduce errors.",
+      content: "The networking space featured golden tacos, potato wedges, fries, popcorn, and snacks. Beer, soft drinks, and water were available to keep conversations flowing. The vibe encouraged attendees to exchange contacts and ask technical questions after the talks.",
     },
   ];
 
