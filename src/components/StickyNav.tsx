@@ -23,7 +23,6 @@ const StickyNav = ({ onNavigate, activeSection }: StickyNavProps) => {
     { id: "metricas", label: "Metrics", icon: BarChart3, bgColor: "bg-brand-dark-blue" },
     { id: "experiencia", label: "Experience", icon: BookOpen, bgColor: "bg-brand-red" },
     { id: "impacto", label: "Impact", icon: Target, bgColor: "bg-brand-yellow" },
-    { id: "media", label: "Media", icon: Camera, bgColor: "bg-gray-400" },
     { id: "photo-gallery", label: "Gallery", icon: Camera, bgColor: "bg-brand-dark-blue" },
   ];
 

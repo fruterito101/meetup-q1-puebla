@@ -16,7 +16,6 @@ const HeroSection = ({ onNavigate }: HeroSectionProps) => {
     { id: "metricas", label: "METRICS", icon: BarChart3, colorClass: "flex items-center justify-center bg-brand-dark-blue hover:bg-brand-dark-blue/90 text-white px-2 sm:px-4 md:px-5 py-2 md:py-3 rounded-lg font-semibold transition-all uppercase text-[10px] md:text-xs lg:text-sm" },
     { id: "experiencia", label: "EXPERIENCE", icon: BookOpen, colorClass: "flex items-center justify-center bg-brand-red hover:bg-brand-red/90 text-white px-2 sm:px-4 md:px-5 py-2 md:py-3 rounded-lg font-semibold transition-all uppercase text-[10px] md:text-xs lg:text-sm" },
     { id: "impacto", label: "IMPACT", icon: Target, colorClass: "flex items-center justify-center bg-brand-yellow hover:bg-brand-yellow/90 text-white px-2 sm:px-4 md:px-5 py-2 md:py-3 rounded-lg font-semibold transition-all uppercase text-[10px] md:text-xs lg:text-sm" },
-    { id: "media", label: "MEDIA", icon: Camera, colorClass: "flex items-center justify-center bg-gray-400 hover:bg-gray-500 text-white px-2 sm:px-4 md:px-5 py-2 md:py-3 rounded-lg font-semibold transition-all uppercase text-[10px] md:text-xs lg:text-sm" },
     { id: "photo-gallery", label: "GALLERY", icon: Camera, colorClass: "flex items-center justify-center bg-brand-dark-blue hover:bg-brand-dark-blue/90 text-white px-2 sm:px-4 md:px-5 py-2 md:py-3 rounded-lg font-semibold transition-all uppercase text-[10px] md:text-xs lg:text-sm" },
   ];
 
