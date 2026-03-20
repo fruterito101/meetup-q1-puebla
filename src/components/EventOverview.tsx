@@ -77,7 +77,7 @@ const EventOverview = () => {
                 </div>
                 <div>
                   <p className="text-sm text-muted-foreground">Format</p>
-                  <p className="font-semibold">In-person + Streaming</p>
+                  <p className="font-semibold">In-person</p>
                 </div>
               </div>
             </div>
@@ -113,3 +113,5 @@ const EventOverview = () => {
 };
 
 export default EventOverview;
+ntOverview;
+

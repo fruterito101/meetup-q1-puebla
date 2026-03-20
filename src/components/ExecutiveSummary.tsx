@@ -5,11 +5,7 @@ const ExecutiveSummary = () => {
         <h2 className="section-title text-brand-dark-blue">Executive Summary</h2>
 
         <p className="text-lg md:text-xl text-muted-foreground leading-relaxed mb-10">
-          The inaugural Meetups Frutales Q1 event in Mexico City successfully launched a year-long
-          educational initiative, establishing a strong foundation for quarterly Ethereum education
-          across Mexico. The event executed all planned curriculum tracks, achieved meaningful
-          engagement both in-person and remotely, and created authentic community connections
-          that led to commitments for continued participation and hackathon team formation.
+          The main talking point was AI as a driver of the fourth industrial revolution—and whether it can move beyond the tech hype. We explored the viability of an autonomous agent economy powered by crypto. Attendees discussed how these two technologies could converge to shape a new economic system.
         </p>
 
         <img

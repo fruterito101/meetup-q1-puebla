@@ -98,9 +98,9 @@ const HeroSection = ({ onNavigate }: HeroSectionProps) => {
             {/* New Location & Date Position */}
             <div className="flex items-center justify-center md:justify-end gap-2 text-white mb-8 md:mb-12">
               <MapPin className="w-4 h-4 md:w-6 md:h-6" />
-              <span className="font-bold text-base md:text-xl">CDMX</span>
+              <span className="font-bold text-base md:text-xl">PUEBLA</span>
               <span className="mx-2 opacity-50">|</span>
-              <span className="font-bold text-base md:text-xl uppercase tracking-wider">JANUARY 28, 2026</span>
+              <span className="font-bold text-base md:text-xl uppercase tracking-wider">FEBRUARY 13, 2026</span>
             </div>
           </div>
 
