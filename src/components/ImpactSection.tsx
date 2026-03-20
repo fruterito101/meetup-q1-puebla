@@ -35,21 +35,9 @@ const ImpactSection = () => {
       status: "complete",
     },
     {
-      goal: "Live streaming",
-      target: "✓",
-      achievement: "469 views",
-      status: "complete",
-    },
-    {
-      goal: "POAP distribution",
-      target: "70%+",
-      achievement: "46%",
-      status: "warning",
-    },
-    {
       goal: "Build community",
       target: "20-30",
-      achievement: "18 + 469 remote",
+      achievement: "17 IRL",
       status: "complete",
     },
     {
@@ -193,12 +181,6 @@ const ImpactSection = () => {
                   <Check className="w-3 h-3 text-emerald-600" />
                 </div>
                 <span className="text-sm text-muted-foreground">Completed</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <div className="w-4 h-4 bg-amber-100 rounded flex items-center justify-center">
-                  <AlertTriangle className="w-3 h-3 text-amber-500" />
-                </div>
-                <span className="text-sm text-muted-foreground">Below goal</span>
               </div>
             </div>
           </div>
