@@ -47,7 +47,7 @@ const MetricsSection = () => {
             <div className="card-frutal">
               <ResponsiveContainer width="100%" height={200}>
                 <BarChart data={registrationData} layout="vertical">
-                  <XAxis type="number" domain={[0, 50]} />
+                  <XAxis type="number" domain={[0, 30]} />
                   <YAxis type="category" dataKey="name" width={120} />
                   <Tooltip />
                   <Bar dataKey="value" radius={[0, 8, 8, 0]} />
