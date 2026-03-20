@@ -54,39 +54,7 @@ const ExperienceSection = () => {
           </div>
         </div>
 
-        {/* Notable Moments */}
-        <div>
-          <h3 className="text-xl font-bold text-brand-dark-blue mb-6">Notable Moments</h3>
-          <div className="grid md:grid-cols-2 gap-6">
-            <div className="card-frutal border-l-4 border-brand-light-blue">
-              <div className="flex items-center gap-3 mb-4">
-                <div className="w-12 h-12 bg-brand-light-blue/20 rounded-full flex items-center justify-center">
-                  <Globe className="w-6 h-6 text-brand-dark-blue" />
-                </div>
-                <h4 className="font-bold text-brand-dark-blue">Hybrid Engagement Success</h4>
-              </div>
-              <p className="text-muted-foreground">
-                The remote audience actively participated through live chat, asking questions
-                in real-time and contributing to discussions. The hybrid format proved to be effective
-                for expanding reach without sacrificing interaction quality.
-              </p>
-            </div>
 
-            <div className="card-frutal border-l-4 border-brand-yellow">
-              <div className="flex items-center gap-3 mb-4">
-                <div className="w-12 h-12 bg-brand-yellow/20 rounded-full flex items-center justify-center">
-                  <Wrench className="w-6 h-6 text-brand-dark-blue" />
-                </div>
-                <h4 className="font-bold text-brand-dark-blue">Authentic Technical Challenge</h4>
-              </div>
-              <p className="text-muted-foreground">
-                Unexpected technical issues arose during the AI bot demonstration.
-                This became a valuable learning moment, showing the reality of
-                Web3 development and the importance of resilience in the face of failure.
-              </p>
-            </div>
-          </div>
-        </div>
       </div>
     </section>
   );

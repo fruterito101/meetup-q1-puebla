@@ -15,21 +15,9 @@ const ResultsSection = () => {
       status: "complete",
     },
     {
-      goal: "Live streaming",
-      target: "✓",
-      achievement: "469 views",
-      status: "complete",
-    },
-    {
-      goal: "POAP distribution",
-      target: "70%+",
-      achievement: "46%",
-      status: "warning",
-    },
-    {
       goal: "Build community",
       target: "20-30",
-      achievement: "18 + 469 remote",
+      achievement: "17 IRL",
       status: "complete",
     },
     {
