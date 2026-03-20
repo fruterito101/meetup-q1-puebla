@@ -1,0 +1,272 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Meetups Frutales Brand Colors */
+    --brand-red: 355 77% 50%;
+    --brand-dark-blue: 215 65% 35%;
+    --brand-light-blue: 199 79% 66%;
+    --brand-yellow: 41 100% 66%;
+    
+    /* Base colors */
+    --background: 210 50% 98%;
+    --foreground: 0 0% 10%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 10%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 10%;
+
+    --primary: 215 65% 35%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 199 79% 66%;
+    --secondary-foreground: 0 0% 10%;
+
+    --muted: 210 20% 94%;
+    --muted-foreground: 215 15% 45%;
+
+    --accent: 41 100% 66%;
+    --accent-foreground: 0 0% 10%;
+
+    --destructive: 355 77% 50%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 215 65% 35%;
+
+    --radius: 0.75rem;
+
+    /* Custom gradients */
+    --gradient-hero: linear-gradient(135deg, hsl(215 65% 35%) 0%, hsl(199 79% 66%) 100%);
+    --gradient-red: linear-gradient(135deg, hsl(355 77% 50%) 0%, hsl(355 77% 60%) 100%);
+    
+    /* Shadows */
+    --shadow-card: 0 4px 20px -4px hsl(215 65% 35% / 0.15);
+    --shadow-button: 0 4px 12px -2px hsl(0 0% 0% / 0.2);
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 215 30% 10%;
+    --foreground: 210 40% 98%;
+    --card: 215 30% 12%;
+    --card-foreground: 210 40% 98%;
+    --popover: 215 30% 12%;
+    --popover-foreground: 210 40% 98%;
+    --primary: 199 79% 66%;
+    --primary-foreground: 0 0% 10%;
+    --secondary: 215 65% 35%;
+    --secondary-foreground: 0 0% 100%;
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+    --accent: 41 100% 66%;
+    --accent-foreground: 0 0% 10%;
+    --destructive: 355 77% 50%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 199 79% 66%;
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-montserrat antialiased;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer components {
+  .nav-button {
+    @apply px-6 py-3 rounded-lg font-semibold text-sm md:text-base transition-all duration-300 shadow-button;
+    @apply hover:scale-105 hover:brightness-110;
+  }
+
+  .nav-button-red {
+    @apply nav-button bg-brand-red text-white;
+  }
+
+  .nav-button-dark-blue {
+    @apply nav-button bg-brand-dark-blue text-white;
+  }
+
+  .nav-button-light-blue {
+    @apply nav-button bg-brand-light-blue text-foreground;
+  }
+
+  .nav-button-yellow {
+    @apply nav-button bg-brand-yellow text-foreground;
+  }
+
+  .section-container {
+    @apply max-w-6xl mx-auto px-4 md:px-6 lg:px-8 pt-4 pb-16 md:py-24;
+  }
+
+  .section-title {
+    @apply text-3xl md:text-4xl font-bold mb-6 text-foreground;
+  }
+
+  .card-frutal {
+    @apply bg-card rounded-xl shadow-card p-6 transition-all duration-300 hover:shadow-lg;
+  }
+
+  .stat-card {
+    @apply card-frutal text-center;
+  }
+
+  .stat-number {
+    @apply text-4xl md:text-5xl font-bold;
+  }
+
+  .stat-label {
+    @apply text-muted-foreground text-sm mt-2;
+  }
+
+  .track-card {
+    @apply rounded-xl p-6 text-white transition-transform duration-300 hover:scale-[1.02];
+  }
+
+  .hero-overlay {
+    @apply absolute inset-0 bg-gradient-to-br from-brand-dark-blue/70 via-brand-dark-blue/50 to-transparent;
+  }
+
+  .fruit-decoration {
+    @apply absolute w-16 md:w-24 opacity-90 animate-float;
+  }
+
+  .grid-pattern {
+    background-image: 
+      linear-gradient(to right, hsl(var(--brand-red)) 0%, hsl(var(--brand-red)) 25%),
+      linear-gradient(to right, hsl(var(--brand-dark-blue)) 25%, hsl(var(--brand-dark-blue)) 50%),
+      linear-gradient(to right, hsl(var(--brand-light-blue)) 50%, hsl(var(--brand-light-blue)) 75%),
+      linear-gradient(to right, hsl(var(--brand-yellow)) 75%, hsl(var(--brand-yellow)) 100%);
+  }
+
+  .timeline-item {
+    @apply relative pl-8 pb-8 border-l-2 border-brand-light-blue last:border-0 last:pb-0;
+  }
+
+  .timeline-dot {
+    @apply absolute left-[-9px] w-4 h-4 rounded-full bg-brand-light-blue;
+  }
+}
+
+@layer utilities {
+  .bg-brand-red {
+    background-color: hsl(var(--brand-red));
+  }
+  
+  .bg-brand-dark-blue {
+    background-color: hsl(var(--brand-dark-blue));
+  }
+  
+  .bg-brand-light-blue {
+    background-color: hsl(var(--brand-light-blue));
+  }
+  
+  .bg-brand-yellow {
+    background-color: hsl(var(--brand-yellow));
+  }
+
+  .text-brand-red {
+    color: hsl(var(--brand-red));
+  }
+  
+  .text-brand-dark-blue {
+    color: hsl(var(--brand-dark-blue));
+  }
+  
+  .text-brand-light-blue {
+    color: hsl(var(--brand-light-blue));
+  }
+  
+  .text-brand-yellow {
+    color: hsl(var(--brand-yellow));
+  }
+
+  .border-brand-red {
+    border-color: hsl(var(--brand-red));
+  }
+  
+  .border-brand-dark-blue {
+    border-color: hsl(var(--brand-dark-blue));
+  }
+  
+  .border-brand-light-blue {
+    border-color: hsl(var(--brand-light-blue));
+  }
+  
+  .border-brand-yellow {
+    border-color: hsl(var(--brand-yellow));
+  }
+
+  .animate-float {
+    animation: float 6s ease-in-out infinite;
+  }
+
+  .animate-bounce-gentle {
+    animation: bounce-gentle 2s ease-in-out infinite;
+  }
+
+  .animate-fade-in {
+    animation: fade-in 0.6s ease-out forwards;
+  }
+
+  .animate-slide-up {
+    animation: slide-up 0.6s ease-out forwards;
+  }
+
+  @keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-20px); }
+  }
+
+  @keyframes bounce-gentle {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+  }
+
+  @keyframes fade-in {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  @keyframes slide-up {
+    from { opacity: 0; transform: translateY(40px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  .font-montserrat {
+    font-family: 'Montserrat', sans-serif;
+  }
+}
