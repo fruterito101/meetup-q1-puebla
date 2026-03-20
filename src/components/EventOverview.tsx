@@ -50,7 +50,7 @@ const EventOverview = () => {
                 </div>
                 <div>
                   <p className="text-sm text-muted-foreground">Date</p>
-                  <p className="font-semibold">January 28, 2026</p>
+                  <p className="font-semibold">February 13, 2026</p>
                 </div>
               </div>
               <div className="flex items-center gap-4">
