@@ -64,28 +64,6 @@ const MetricsSection = () => {
           </div>
         </div>
 
-        {/* Streaming Stats */}
-        <div className="mb-12">
-          <h3 className="text-xl font-bold text-brand-dark-blue mb-6">Streaming Reach</h3>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-            <div className="stat-card bg-brand-red text-white">
-              <Youtube className="w-10 h-10 mx-auto mb-3" />
-              <div className="stat-number">125</div>
-              <div className="stat-label text-white/80 text-lg">YouTube Views</div>
-            </div>
-            <div className="stat-card bg-brand-dark-blue text-white">
-              <XIcon className="w-10 h-10 mx-auto mb-3" />
-              <div className="stat-number">344</div>
-              <div className="stat-label text-white/80 text-lg">X Views</div>
-            </div>
-            <div className="stat-card bg-brand-light-blue">
-              <Users className="w-10 h-10 mx-auto mb-3 text-brand-dark-blue" />
-              <div className="stat-number text-brand-dark-blue">469</div>
-              <div className="stat-label text-lg text-brand-dark-blue">Total Remote Reach</div>
-            </div>
-          </div>
-        </div>
-
         {/* Charts Grid */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {/* POAP Distribution */}
